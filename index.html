@@ -1,36 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dron360 Experience</title>
+<meta name="description" content="Experiencias inmersivas cinematográficas en 360º para hoteles, inmobiliarias, villas, barcos y espacios premium.">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-DRON360 EXPERIENCE
-Tus clientes lo verán y lo vivirán.
-Experiencias inmersivas cinematográficas en 360º para hoteles, inmobiliarias, villas, barcos, gimnasios y espacios premium.
-WhatsApp
-Ver demo 360º
-La nueva forma de mostrar un lugar
-Creamos recorridos inmersivos donde el espectador puede explorar libremente el entorno en 360 grados y sentir el lugar antes de visitarlo.
-Inmobiliarias
-Haz que el comprador sienta la vivienda antes de entrar.
-Hoteles
-Muestra habitaciones, terrazas, piscinas y experiencias de forma espectacular.
-Barcos
-Recorridos flotantes y cinematográficos para venta o alquiler de embarcaciones.
-Gimnasios
-Enseña ambiente, instalaciones y servicios de una forma moderna y diferente.
-Una sola grabación. Múltiples contenidos.
-El recorrido inmersivo puede utilizarse como experiencia 360º y también como material base para crear reels, vídeos tradicionales y contenido publicitario.
-Grabación 360º
-Capturamos todo el entorno para poder elegir diferentes enfoques posteriormente.
-Contenido reutilizable
-Perfecto para redes sociales, YouTube, publicidad y campañas digitales.
-Libertad creativa
-El cliente o su equipo pueden editar y reutilizar el contenido según sus necesidades.
-Experiencia inmersiva 360º
-Mueve el móvil o arrastra la pantalla para explorar el vídeo en 360 grados.
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#f4f1ea;
+color:#102033;
+line-height:1.6;
+}
 
-▶ VER EN YOUTUBE 360º 
+.top-banner{
+width:100%;
+background:#f4f1ea;
+}
 
-▶ VER OTRO VIDEO 360º 
-Convierte una visita en una experiencia
-Si tienes un hotel, una villa, una inmobiliaria, un barco o un negocio premium, podemos ayudarte a mostrarlo de una forma completamente diferente.
-Contactar ahora
-Canal YouTube
-Dron360 Experience
-Experiencias inmersivas cinematográficas para espacios premium. 
+.top-banner img{
+width:100%;
+display:block;
+}
+
+header{
+height:100vh;
+background:#102033;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero{
+max-width:900px;
+color:white;
+}
+
+.logo{
+font-size:18px;
+letter-spacing:4px;
+text-transform:uppercase;
+margin-bottom:20px;
+color:#d8b36a;
+font-weight:bold;
+}
+
+h1{
+font-size:clamp(42px,7vw,82px);
+line-height:1.05;
+margin-bottom:24px;
+}
+
+.hero p{
+font-size:clamp(18px,2vw,24px);
+max-width:760px;
+margin:0 auto 35px;
+}
+
+.buttons{
+display:flex;
+gap:16px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:15px 28px;
+border-radius:999px;
+font-weight:bold;
+text-decoration:none;
+transition:.3s;
+}
+
+.btn-gold{
+background:#d8b36a;
+color:#102033;
+}
+
+.btn-outline{
+border:2px solid white;
+color:white;
+}
+
+section{
+padding:80px 8%;
+}
+
+.container{
+max-width:1300px;
+margin:auto;
+}
+
+h2{
+font-size:clamp(34px,5vw,56px);
+margin-bottom:20px;
+text-align:center;
+}
+
+.intro{
+max-width:850px;
+margin:0 auto 50px;
+text-align:center;
+font-size:20px;
+color:#45576b;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:24px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:24px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.card h3{
+margin-bottom:12px;
+font-size:24px;
+color:#102033;
+}
+
+.dark{
+background:#102033;
+color:white;
+}
+
+.dark .intro{
+color:#d9e2ec;
+}
+
+.dark .card{
+background:#ffffff;
+color:#102033;
+border:1px solid rgba(214,173,95,.35);
+}
+
+.dark .card h3{
+color:#102033;
+}
+.video-box{
+margin-top:40px;
+border-radius:24px;
+overflow:hidden;
+box-shadow:0 12px 40px rgba(0,0,0,.2);
+}
+
+.video-box iframe{
+width:100%;
+aspect-ratio:16/9;
+border:none;
+}
+
+.notice{
+margin-top:20px;
+background:#fff4db;
+padding:18px 22px;
+border-left:5px solid #d8b36a;
+border-radius:12px;
+font-size:16px;
+}
+
+.cta{
+text-align:center;
+background:linear-gradient(135deg,#102033,#1f3a5c);
+color:white;
+}
+
+.cta p{
+max-width:800px;
+margin:20px auto 35px;
+font-size:21px;
+color:#dde7f2;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#ebe5d9;
+font-size:15px;
+color:#4f5d6d;
+}
+
+@media(max-width:768px){
+section{
+padding:60px 6%;
+}
+
+header{
+height:auto;
+padding:120px 20px;
+}
+}
+</style>
+</head>
+<body>
+<div class="top-banner">
+
+  <img src="portada.png" alt="Dron360 Experience">
+
+</div>
+<header>
+<div class="hero">
+<div class="logo">DRON360 EXPERIENCE</div>
+<h1>Tus clientes lo verán y lo vivirán.</h1>
+<p>Experiencias inmersivas cinematográficas en 360º para hoteles, inmobiliarias, villas, barcos, gimnasios y espacios premium.</p>
+<div class="buttons">
+<a href="https://wa.me/34691201151" target="_blank" class="btn btn-gold">WhatsApp</a>
+<a href="#demo" class="btn btn-outline">Ver demo 360º</a>
+</div>
+</div>
+</header>
+
+<section>
+<div class="container">
+<h2>La nueva forma de mostrar un lugar</h2>
+<p class="intro">Creamos recorridos inmersivos donde el espectador puede explorar libremente el entorno en 360 grados y sentir el lugar antes de visitarlo.</p>
+
+<div class="grid">
+<div class="card">
+<h3>Inmobiliarias</h3>
+<p>Haz que el comprador sienta la vivienda antes de entrar.</p>
+</div>
+
+<div class="card">
+<h3>Hoteles</h3>
+<p>Muestra habitaciones, terrazas, piscinas y experiencias de forma espectacular.</p>
+</div>
+
+<div class="card">
+<h3>Barcos</h3>
+<p>Recorridos flotantes y cinematográficos para venta o alquiler de embarcaciones.</p>
+</div>
+
+<div class="card">
+<h3>Gimnasios</h3>
+<p>Enseña ambiente, instalaciones y servicios de una forma moderna y diferente.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="dark">
+<div class="container">
+<h2>Una sola grabación. Múltiples contenidos.</h2>
+<p class="intro">El recorrido inmersivo puede utilizarse como experiencia 360º y también como material base para crear reels, vídeos tradicionales y contenido publicitario.</p>
+
+<div class="grid">
+<div class="card">
+<h3>Grabación 360º</h3>
+<p>Capturamos todo el entorno para poder elegir diferentes enfoques posteriormente.</p>
+</div>
+
+<div class="card">
+<h3>Contenido reutilizable</h3>
+<p>Perfecto para redes sociales, YouTube, publicidad y campañas digitales.</p>
+</div>
+
+<div class="card">
+<h3>Libertad creativa</h3>
+<p>El cliente o su equipo pueden editar y reutilizar el contenido según sus necesidades.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="demo">
+<div class="container">
+<h2>Experiencia inmersiva 360º</h2>
+<p class="intro">Mueve el móvil o arrastra la pantalla para explorar el vídeo en 360 grados.</p>
+
+<div class="video-box">
+<iframe src="https://www.youtube.com/embed/NbNxLl7guSg" allowfullscreen></iframe>
+</div>
+<div style="text-align:center; margin:50px 0;">
+  <a href="https://www.youtube.com/watch?v=NbNxLl7guSg" target="_blank" style="
+    display:inline-block;
+    background:#ff0000;
+    color:white;
+    padding:20px 40px;
+    font-size:28px;
+    font-weight:bold;
+    border-radius:12px;
+    text-decoration:none;
+    font-family:Arial,sans-serif;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+  ">
+    ▶ VER EN YOUTUBE 360º
+  </a>
+</div>
+<div class="video-box" style="margin-top:40px;">
+<iframe src="https://www.youtube.com/embed/xa29e6Y7-BU"
+allowfullscreen></iframe>
+</div>
+
+<div style="text-align:center; margin:30px 0 60px;">
+<a href="https://www.youtube.com/watch?v=xa29e6Y7-BU"
+target="_blank" style="
+display:inline-block;
+background:#ff0000;
+color:white;
+padding:20px 40px;
+font-size:28px;
+font-weight:bold;
+border-radius:12px;
+text-decoration:none;
+font-family:Arial,sans-serif;
+box-shadow:0 8px 25px rgba(0,0,0,.25);
+">
+▶ VER OTRO VIDEO 360º
+</a>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="container">
+<h2>Convierte una visita en una experiencia</h2>
+<p>Si tienes un hotel, una villa, una inmobiliaria, un barco o un negocio premium, podemos ayudarte a mostrarlo de una forma completamente diferente.</p>
+
+<div class="buttons">
+<a href="https://wa.me/34691201151" target="_blank" class="btn btn-gold">Contactar ahora</a>
+<a href="https://www.youtube.com/@Dron360Experience" target="_blank" class="btn btn-outline">Canal YouTube</a>
+</div>
+</div>
+</section>
+
+<footer>
+<strong>Dron360 Experience</strong><br>
+Experiencias inmersivas cinematográficas para espacios premium.
+</footer>
+
+</body>
+</html>
